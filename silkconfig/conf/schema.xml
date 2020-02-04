@@ -53,9 +53,9 @@
       single-valued and either be required or have a default value.
     -->
     <fieldType class="solr.IntPointField" name="int" positionIncrementGap="0"/>
-    <fieldType class="solr.FloatPointField" name="float" positionIncrementGap="0" precisionStep="0"/>
-    <fieldType class="solr.LongPointField" name="long" positionIncrementGap="0" precisionStep="0"/>
-    <fieldType class="solr.DoublePointField" name="double" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType class="solr.FloatPointField" name="float" positionIncrementGap="0"/>
+    <fieldType class="solr.LongPointField" name="long" positionIncrementGap="0"/>
+    <fieldType class="solr.DoublePointField" name="double" positionIncrementGap="0"/>
 
     <!--
      Numeric field types that index each value at various levels of precision
@@ -68,9 +68,9 @@
      A precisionStep of 0 disables indexing at different precision levels.
     -->
     <fieldType class="solr.IntPointField" name="tint" positionIncrementGap="0"/>
-    <fieldType class="solr.FloatPointField" name="tfloat" positionIncrementGap="0" precisionStep="8"/>
-    <fieldType class="solr.LongPointField" name="tlong" positionIncrementGap="0" precisionStep="8"/>
-    <fieldType class="solr.DoublePointField" name="tdouble" positionIncrementGap="0" precisionStep="8"/>
+    <fieldType class="solr.FloatPointField" name="tfloat" positionIncrementGap="0"/>
+    <fieldType class="solr.LongPointField" name="tlong" positionIncrementGap="0"/>
+    <fieldType class="solr.DoublePointField" name="tdouble" positionIncrementGap="0"/>
 
     <!-- The format for this date field is of the form 1995-12-31T23:59:59Z, and
          is a more restricted form of the canonical representation of dateTime
