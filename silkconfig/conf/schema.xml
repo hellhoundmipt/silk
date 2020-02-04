@@ -414,7 +414,7 @@
     <fieldType class="solr.PointType" dimension="2" name="point" subFieldSuffix="_d"/>
 
     <!-- A specialized field for geospatial search. If indexed, this fieldType must not be multivalued. -->
-    <fieldType class="solr.LatLonPointSpatialField" name="location" subFieldSuffix="_coordinate"/>
+    <fieldType class="solr.LatLonPointSpatialField" name="location"/>
 
     <!-- An alternative geospatial field type new to Solr 4.  It supports multiValued and polygon shapes.
       For more information about this and other Spatial fields new to Solr 4, see:
