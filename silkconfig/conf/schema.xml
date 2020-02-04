@@ -94,10 +94,10 @@
 
          Note: For faster range queries, consider the tdate type
       -->
-    <fieldType class="solr.DatePointField" name="date" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType class="solr.DatePointField" name="date" positionIncrementGap="0"/>
 
     <!-- A Trie based date field for faster date range queries and date faceting. -->
-    <fieldType class="solr.DatePointField" name="tdate" positionIncrementGap="0" precisionStep="6"/>
+    <fieldType class="solr.DatePointField" name="tdate" positionIncrementGap="0"/>
 
 
     <!--Binary data type. The data should be sent/retrieved in as Base64 encoded Strings -->
@@ -426,6 +426,6 @@
      special relevancy modes: score=overlapRatio|area|area2D (local-param to the query).  DocValues is required for
      relevancy. -->
     <fieldType class="solr.BBoxField" geo="true" name="bbox" numberType="_bbox_coord" units="degrees"/>
-    <fieldType class="solr.DoublePointField" docValues="true" name="_bbox_coord" precisionStep="8" stored="false"/>
+    <fieldType class="solr.DoublePointField" docValues="true" name="_bbox_coord" stored="false"/>
 
 </schema>
