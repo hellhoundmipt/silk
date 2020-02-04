@@ -52,7 +52,7 @@
       These fields support doc values, but they require the field to be
       single-valued and either be required or have a default value.
     -->
-    <fieldType class="solr.IntPointField" name="int" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType class="solr.IntPointField" name="int" positionIncrementGap="0"/>
     <fieldType class="solr.FloatPointField" name="float" positionIncrementGap="0" precisionStep="0"/>
     <fieldType class="solr.LongPointField" name="long" positionIncrementGap="0" precisionStep="0"/>
     <fieldType class="solr.DoublePointField" name="double" positionIncrementGap="0" precisionStep="0"/>
@@ -67,7 +67,7 @@
      indexed per value, slightly larger index size, and faster range queries.
      A precisionStep of 0 disables indexing at different precision levels.
     -->
-    <fieldType class="solr.IntPointField" name="tint" positionIncrementGap="0" precisionStep="8"/>
+    <fieldType class="solr.IntPointField" name="tint" positionIncrementGap="0"/>
     <fieldType class="solr.FloatPointField" name="tfloat" positionIncrementGap="0" precisionStep="8"/>
     <fieldType class="solr.LongPointField" name="tlong" positionIncrementGap="0" precisionStep="8"/>
     <fieldType class="solr.DoublePointField" name="tdouble" positionIncrementGap="0" precisionStep="8"/>
@@ -426,6 +426,6 @@
      special relevancy modes: score=overlapRatio|area|area2D (local-param to the query).  DocValues is required for
      relevancy. -->
     <fieldType class="solr.BBoxField" geo="true" name="bbox" numberType="_bbox_coord" units="degrees"/>
-    <fieldType class="solr.TrieDoubleField" docValues="true" name="_bbox_coord" precisionStep="8" stored="false"/>
+    <fieldType class="solr.DoublePointField" docValues="true" name="_bbox_coord" precisionStep="8" stored="false"/>
 
 </schema>
